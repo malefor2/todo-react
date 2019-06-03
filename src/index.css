@@ -11,3 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+form{
+  display: inline-flex;
+  justify-content: center;
+  margin: 10px;
+  width: 400px;
+}
+input{
+  width: stretch;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 2;
+}
+ul{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  width: 400px;
+  align-items: center;
+}
+.listItem{
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  margin: 4px;
+  background-color: lightgrey;
+  text-align: center;
+}
+.listItem button{
+  align-self:
+}
+.listItem li{
+  flex-grow: 2;
+  width: auto;
+}
+#wrapper{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.done{
+  text-decoration: line-through;
+  background-color: grey;
+}
+.listItem .notDone:hover{
+  animation-duration: 0.5s;
+  animation-name: hov;
+}
+@keyframes hov{
+  from{
+    background-color: lightgrey;
+  }to{
+    background-color: grey;
+  }
+}
+.notDone{
+  color: black;
+}
